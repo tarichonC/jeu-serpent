@@ -1,3 +1,19 @@
+/* TODO :
+    Gérer les collisions :
+        - mur
+        - corps du serpent
+
+    Gérer le "mangeage" de pomme :
+        - gérer l'apparition et la disparition d'une pomme.
+        - Agrandir le corps du serpent (ajouter un [x, y]) à la fin du tableau snake.body
+        - Compter des points
+        - Accélerer le serpent au bout d'un certain nb de pommes (réduire le delay)
+        - Pommes pourries ?
+    
+    what else ?
+*/
+
+
 
 window.onload = function() {
 
@@ -52,7 +68,7 @@ window.onload = function() {
         setTimeout(refresh, delay);  // Ajout du timer
 
     }
-    
+
     function drawBlock(ctx, block) {
         ctx.fillRect(block[0] * BLOCKSIZE, block[1] * BLOCKSIZE, BLOCKSIZE, BLOCKSIZE);
     }
