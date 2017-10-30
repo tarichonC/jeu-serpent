@@ -15,7 +15,7 @@ window.onload = function() {
         KEY_DOWN: 40
     };
 
-    var delay = 100;
+    var delay = 120;
     var xCoord = 0;
     var yCoord = 0;
     var canvas; // L'objet HTML canvas dans lequel on dessine
@@ -147,7 +147,7 @@ window.onload = function() {
 
             ctx.save();
             ctx.fillStyle = APPLE_COLOR;
-            // ctx.beginPath();
+            ctx.beginPath();
             ctx.arc(x, y, radius, 0, Math.PI * 2, true);
             ctx.fill();
             ctx.restore();
